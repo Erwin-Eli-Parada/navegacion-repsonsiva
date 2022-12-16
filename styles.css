@@ -1,0 +1,54 @@
+/*Reseteo o formateo*/
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Cabecera*/
+header{
+    display: flex;
+    padding: 10px;
+    min-height: 70px;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #67ABE6;
+}
+/*Logo*/
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo-img{
+    height: 10vh;
+}
+#logo-text{
+    margin-left: 5px;
+    font-size: 2em;
+}
+/*Links*/
+.nav-link{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+/*Animaciones*/
+.nav-link:hover{
+    color: #6C5EFF;
+}
+
+/*Media query para responsivo*/
+@media (max-width: 655px) {
+    header{
+        flex-direction: column;
+    }
+    #nav-bar{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
